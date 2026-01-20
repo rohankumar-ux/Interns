@@ -2,29 +2,133 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
     min-height: 100vh;
+    background: #eef3ff;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    align-items: center;
+}
+
+.card {
+    width: 740px;
+    height: 460px;
+    background: white;
+    border-radius: 28px;
+    display: flex;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.left {
+    width: 370px;
+    background: linear-gradient(180deg, #6543ff, #2f2ce9);
+    border-radius: 28px;
     color: white;
-}
-
-main {
+    padding: 40px;
     text-align: center;
-    padding: 2rem;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.left .title {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-bottom: 30px;
 }
 
-p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+.score-circle {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #4d21c9, #2f2ce9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.of {
+    opacity: 0.7;
+}
+
+.left h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.desc {
+    font-size: 16px;
+    opacity: 0.85;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.right {
+    flex: 1;
+    padding: 42px;
+}
+
+.right h3 {
+    font-size: 22px;
+    margin-bottom: 28px;
+    color: #2f344a;
+}
+
+.item {
+    height: 58px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item span {
+    color: #8a8fa3;
+}
+
+.reaction {
+    background: #fff2f1;
+    color: #ff5757;
+}
+
+.memory {
+    background: #fff8ee;
+    color: #ffb01f;
+}
+
+.verbal {
+    background: #f2fbfa;
+    color: #00bd91;
+}
+
+.visual {
+    background: #f3f3fd;
+    color: #1125d6;
+}
+
+button {
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+    background: #303b59;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f2a44;
 }
