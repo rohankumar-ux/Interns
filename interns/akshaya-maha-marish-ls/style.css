@@ -1,30 +1,119 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: system-ui, -apple-system, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+:root{
+    --fcolor:rgb(128, 128, 128);
+    --tcolor:rgba(88, 80, 80, 0.944);
+    --shadow-color: rgba(0, 0, 0, 0.2);
+
 }
 
-main {
+
+h1,h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 550;
+    padding: 7px;
+    color: var(--tcolor);
+}
+
+.ftitle{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 20px;
+}
+
+p,.para{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color:var(--fcolor);
+}
+
+.para{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+body{
+    background-color: #f7f7f7f8;
+    padding: 10px;
+}
+
+.toppane{
+    margin: 60px 0 50px;
     text-align: center;
-    padding: 2rem;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-bottom: 60px;
 }
 
-p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+.box1,.box3,.col1,.col2{
+    width: 300px;
+    padding: 24px;
+    border-radius: 5px;
+    box-shadow:0 6px 12px var(--shadow-color), 0 10px 25px rgba(0,0,0,0.1);
+    align-self: center;
+    position: relative;
+}
+
+.box1,.box3{
+    align-self: center;
+}
+
+.box1 { border-top: 3px solid #3ccfcf; }
+.col1 { border-top: 3px solid #ce1e18; }
+.col2 { border-top: 3px solid #ebc107; }
+.box3 { border-top: 3px solid #0c3596; }
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+
+
+.box1 img,
+.col1 img,
+.col2 img,
+.box3 img{
+    position:static;
+    display: block;
+    margin-top: 15px;
+    margin-left: 200px;
+    width: 50px;
+}
+
+
+
+@media screen and (max-width: 930px){
+    .container{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        margin:0 auto;
+    }
+
+    .box1,.box3,.col1,.col2{
+        flex: 1 1 70%;
+        max-width: 500px;
+        min-width: 250px;
+        padding: 30 px;
+    }
+
+    
+
 }
