@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "buildCommand": "node scripts/build.js",
+  "outputDirectory": "public",
+  "github": {
+    "enabled": false
+  },
+  "trailingSlash": true
+}

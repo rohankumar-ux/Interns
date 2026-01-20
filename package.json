@@ -1,0 +1,9 @@
+{
+  "name": "interns-showcase",
+  "version": "1.0.0",
+  "description": "Intern projects showcase",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:intern": "node scripts/build-intern.js"
+  }
+}
