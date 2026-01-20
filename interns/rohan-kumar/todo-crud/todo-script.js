@@ -20,7 +20,7 @@ function writeTodos() {
     let filteredTodos = getFilteredTodos();
 
     if (filteredTodos.length === 0) {
-        todoList.innerHTML = `<div>No todos to show</div>`;
+        todoList.innerHTML = `<div>No todos to show.</div>`;
         return;
     }
 
